@@ -30,6 +30,7 @@ Notes:
 
 #include "emu.h"
 #include "scramble.h"
+#include "galdrvr.c"
 
 #include "cpu/s2650/s2650.h"
 #include "cpu/z80/z80.h"
@@ -2090,3 +2091,43 @@ GAME( 1983, cavelon,  0,        cavelon,  cavelon,  scramble_state, init_cavelon
 GAME( 1983, ad2083,   0,        ad2083,   ad2083,   scramble_state, init_ad2083,       ROT90, "Midcoin",              "A. D. 2083",                        MACHINE_SUPPORTS_SAVE | MACHINE_IMPERFECT_SOUND )
 
 GAME( 1983, harem,    0,        harem,    harem,    scramble_state, init_harem,        ROT90, "I.G.R.",               "Harem",                             MACHINE_SUPPORTS_SAVE )
+
+GAME( 1982, emietsko, 0, scramble, emietsuko, scramble_state, init_scramble_ppi, ROT90, "EmiDev (Konami License)", "Emi Etsuko (US)", MACHINE_SUPPORTS_SAVE )
+GAME( 1982, emietskj, emietsko, scramble, emietsuko, scramble_state, init_scramble_ppi, ROT90, "EmiDev (Konami License)", "Emi Etsuko (Japan)", MACHINE_SUPPORTS_SAVE )
+
+
+// Emi Etsuko ROM definitions
+ROM_START( emietsko )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "emietsko.bin", 0x0000, 0x10000, NO_DUMP )
+
+	ROM_REGION( 0x1000, "gfx1", 0 )
+	ROM_LOAD( "emietsko.gfx", 0x0000, 0x1000, NO_DUMP )
+
+	ROM_REGION( 0x0020, "proms", 0 )
+	ROM_LOAD( "emietsko.prom", 0x0000, 0x0020, NO_DUMP )
+ROM_END
+
+ROM_START( emietskj )
+	ROM_REGION( 0x10000, "maincpu", 0 )
+	ROM_LOAD( "emietskj.bin", 0x0000, 0x10000, NO_DUMP )
+
+	ROM_REGION( 0x1000, "gfx1", 0 )
+	ROM_LOAD( "emietskj.gfx", 0x0000, 0x1000, NO_DUMP )
+
+	ROM_REGION( 0x0020, "proms", 0 )
+	ROM_LOAD( "emietskj.prom", 0x0000, 0x0020, NO_DUMP )
+ROM_END
+
+
+// Emi Etsuko Input Ports
+static INPUT_PORTS_START( emietsuko )
+	PORT_INCLUDE(scramble)
+INPUT_PORTS_END
+
+
+// Emi Etsuko GFXDECODE
+static GFXDECODE_START( gfx_emietsuko )
+	GFXDECODE_ENTRY( "gfx1", 0x0000, scramble_charlayout,   0, 8 )
+	GFXDECODE_ENTRY( "gfx1", 0x0000, scramble_spritelayout, 0, 8 )
+GFXDECODE_END
