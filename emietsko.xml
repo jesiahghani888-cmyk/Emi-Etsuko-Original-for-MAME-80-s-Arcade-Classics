@@ -73,14 +73,14 @@
 		<description>Emi Etsuko</description>
 		<year>1982</year>
 		<manufacturer>EmiDev</manufacturer>
-		<rom name="emietsko.1" size="4096" crc="00000000" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" region="maincpu" offset="0"/>
-		<rom name="emietsko.2" size="4096" crc="00000000" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" region="maincpu" offset="1000"/>
-		<rom name="emietsko.3" size="4096" crc="00000000" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" region="maincpu" offset="2000"/>
-		<rom name="emietsko.4" size="4096" crc="00000000" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" region="maincpu" offset="3000"/>
-		<rom name="emietsko.s1" size="4096" crc="00000000" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" region="audiocpu" offset="0"/>
-		<rom name="emietsko.g1" size="2048" crc="00000000" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" region="gfx1" offset="0"/>
-		<rom name="emietsko.g2" size="2048" crc="00000000" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" region="gfx1" offset="800"/>
-		<rom name="emietsko.clr" size="32" crc="00000000" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" region="proms" offset="0"/>
+		<rom name="emietsko.1" size="4096" crc="c71c0011" sha1="1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d" region="maincpu" offset="0"/>
+		<rom name="emietsko.2" size="4096" crc="c71c0011" sha1="1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d" region="maincpu" offset="1000"/>
+		<rom name="emietsko.3" size="4096" crc="c71c0011" sha1="1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d" region="maincpu" offset="2000"/>
+		<rom name="emietsko.4" size="4096" crc="c71c0011" sha1="1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d" region="maincpu" offset="3000"/>
+		<rom name="emietsko.s1" size="4096" crc="c71c0011" sha1="1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d" region="audiocpu" offset="0"/>
+		<rom name="emietsko.g1" size="2048" crc="f1e8ba9e" sha1="605db3fdbaff4ba13729371ad0c4fbab3889378e" region="gfx1" offset="0"/>
+		<rom name="emietsko.g2" size="2048" crc="f1e8ba9e" sha1="605db3fdbaff4ba13729371ad0c4fbab3889378e" region="gfx1" offset="800"/>
+		<rom name="emietsko.clr" size="32" crc="190a55ad" sha1="de8a847bff8c343d69b853a215e6ee775ef2ef96" region="proms" offset="0"/>
 		<display type="raster" rotate="90" width="256" height="224" refresh="60.606060" />
 		<sound channels="1"/>
 		<input players="2" buttons="2" coins="2">

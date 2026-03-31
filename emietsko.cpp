@@ -144,20 +144,20 @@ void emietsko_state::emietsko(machine_config &config)
 
 ROM_START( emietsko )
 	ROM_REGION( 0x10000, "maincpu", 0 )
-	ROM_LOAD( "emietsko.1", 0x0000, 0x1000, CRC(00000000) SHA1(da39a3ee5e6b4b0d3255bfef95601890afd80709) )
-	ROM_LOAD( "emietsko.2", 0x1000, 0x1000, CRC(00000000) SHA1(da39a3ee5e6b4b0d3255bfef95601890afd80709) )
-	ROM_LOAD( "emietsko.3", 0x2000, 0x1000, CRC(00000000) SHA1(da39a3ee5e6b4b0d3255bfef95601890afd80709) )
-	ROM_LOAD( "emietsko.4", 0x3000, 0x1000, CRC(00000000) SHA1(da39a3ee5e6b4b0d3255bfef95601890afd80709) )
+	ROM_LOAD( "emietsko.1", 0x0000, 0x1000, CRC(c71c0011) SHA1(1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d) )
+	ROM_LOAD( "emietsko.2", 0x1000, 0x1000, CRC(c71c0011) SHA1(1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d) )
+	ROM_LOAD( "emietsko.3", 0x2000, 0x1000, CRC(c71c0011) SHA1(1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d) )
+	ROM_LOAD( "emietsko.4", 0x3000, 0x1000, CRC(c71c0011) SHA1(1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d) )
 
 	ROM_REGION( 0x10000, "audiocpu", 0 )
-	ROM_LOAD( "emietsko.s1", 0x0000, 0x1000, CRC(00000000) SHA1(da39a3ee5e6b4b0d3255bfef95601890afd80709) )
+	ROM_LOAD( "emietsko.s1", 0x0000, 0x1000, CRC(c71c0011) SHA1(1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d) )
 
 	ROM_REGION( 0x1000, "gfx1", 0 )
-	ROM_LOAD( "emietsko.g1", 0x0000, 0x0800, CRC(00000000) SHA1(da39a3ee5e6b4b0d3255bfef95601890afd80709) )
-	ROM_LOAD( "emietsko.g2", 0x0800, 0x0800, CRC(00000000) SHA1(da39a3ee5e6b4b0d3255bfef95601890afd80709) )
+	ROM_LOAD( "emietsko.g1", 0x0000, 0x0800, CRC(f1e8ba9e) SHA1(605db3fdbaff4ba13729371ad0c4fbab3889378e) )
+	ROM_LOAD( "emietsko.g2", 0x0800, 0x0800, CRC(f1e8ba9e) SHA1(605db3fdbaff4ba13729371ad0c4fbab3889378e) )
 
 	ROM_REGION( 0x0020, "proms", 0 )
-	ROM_LOAD( "emietsko.clr", 0x0000, 0x0020, CRC(00000000) SHA1(da39a3ee5e6b4b0d3255bfef95601890afd80709) )
+	ROM_LOAD( "emietsko.clr", 0x0000, 0x0020, CRC(190a55ad) SHA1(de8a847bff8c343d69b853a215e6ee775ef2ef96) )
 ROM_END
 
 GAME( 1982, emietsko, 0, emietsko, emietsko, emietsko_state, empty_init, ROT90, "EmiDev", "Emi Etsuko", MACHINE_SUPPORTS_SAVE )
